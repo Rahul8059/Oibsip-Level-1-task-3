@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <h1>Temperature Converter Web App</h1>
+        <div class="base">
+            <div class="input">
+                <h1>Convert Into</h1>
+                <hr>
+                <form action="#">
+                    <input id="input" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Enter temperature here...">
+                    <select name="temp" id="temp-sel">
+                        <option >Select Option</option>
+                            <option >Fahrenheit</option>
+                            <option >Celsius</option>
+                            <option >Kelvin</option>
+                    </select>
+                    <button type="submit" id="Convert" >Convert</button>
+                    <button type="submit" id="reset">Reset</button>
+                </form>
+            </div>
+            <div class="output">
+                <h1>Converted Output</h1><br>
+                <div class="output-base">
+                   <h1 id="Output-format"></h1>
+                   <br>
+                   <h1 id="output-label-1"><sup>&#9900;</sup>Celsius : <span id="celsius-data">0</span></h1>
+                   <br>
+                   <h1 id="output-label-2"><sup>&#9900;</sup>Kelvin : <span id="kelvin-data">0</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>

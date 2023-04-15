@@ -1,0 +1,182 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("https://source.unsplash.com/1200x1200/?temperature") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.overlay {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: rgb(148, 41, 41);
+}
+.base {
+    width:70%;
+    height: 70%;
+    margin: auto;
+    background-color:rgba(172, 207, 109, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: relative;
+}
+.overlay h1
+{
+    position: absolute;
+    top: 5%;
+}
+.input,.output
+{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.input
+{
+    width: 60%;
+    color: white;
+    background-color: rgba(7, 64, 117, 0.5);
+    position: relative;
+}
+.output
+{
+    width: 40%;
+    position: relative;
+    background-color: rgba(129, 69, 28, 0.5);
+}
+hr
+{
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+}
+form
+{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+ form input
+{
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: black;
+    color: white;
+    border: none;
+}
+ form input::selection
+{
+    border: none;
+    background-color: rgb(23, 84, 77);
+}
+select
+{
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    width: 70%;
+    margin: auto;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+}
+#Convert
+{
+    position: absolute;
+    width: 70%;
+    top: 60%;
+    left: 15%;
+    margin: auto;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(87, 13, 100);
+    outline: none;
+    border: none;
+}
+#reset
+{
+    font-weight: bolder;
+    position: absolute;
+    width: 70%;
+    top: 75%;
+    left: 15%;
+    margin: auto;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(9, 15, 49);
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+#reset:hover,#Convert:hover 
+{
+    box-shadow: 0.5px 1px white;
+}
+select option
+{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.output-base
+{
+    width:80%;
+    height:70%;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+    background-color: black;
+    color: rgb(93, 80, 22);
+}
+.output-base #output-label-1
+{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.output-base #output-label-2
+{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+.output-base #Output-format
+{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
